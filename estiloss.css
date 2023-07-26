@@ -1,0 +1,85 @@
+*{
+    font-family:"Unica One";
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--fondo);
+
+}
+
+:root{
+ --principal: #E0AB8B;
+--fondo:#D4A1C0;
+
+
+}
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;/*#191919;*/
+    text-align: center;
+    border-radius: 10px;
+}
+.box h1{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 750;
+}
+.textbox{
+    border: 0px;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid grey;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 20px;
+    transition: width .3s;
+}
+.textbox:hover{
+    width: 240px;
+    border-color: var(--fondo);
+}
+.textbox:hover:focus{
+    width: 240px;
+    border-color: var(--fondo);
+}
+.box input[type = "submit"]{
+    border: 0px;
+    background: black;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 40px;
+    outline: none;
+    width: 120px;
+    color: white;
+    border-radius: 20px;
+    transition: .025;
+    cursor: pointer;
+    transition: width .25s;
+}
+
+.box input[type = "submit"]:hover{
+    width: 160px;
+    border-color: white;
+    background: var(--fondo);
+    
+}
+
+.crear{
+    text-align: center;
+    height: 25px;
+}
+
+.logo{  
+    width: 100%;
+}

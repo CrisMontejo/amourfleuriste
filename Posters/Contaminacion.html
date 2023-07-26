@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <!-- Custon Style -->
+    <link rel="stylesheet" href="products.css">
+    <!-- Icono -->
+    <link rel="icon" href="../media/AFSolo.png">
+    <!-- Josefin Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <!--Unica One-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-container">
+        <nav class="seccion1-nav">
+            <div class="seccion1-img">
+                <img onclick="window.location.href='../inicio.html'" class="nav-img" src="../media/AFSolo.png" alt="">
+                
+            </div>
+            <div class="seccion1-img2">
+                <img onclick="window.location.href='../inicio.html'" class="nav-img2" src="../media/AFSolo.png" alt="">
+
+            </div>
+            <div class="iconContainer">
+                <i class="icono fas fa-list"></i>
+            </div>
+            <div class="aContainer">
+                <a class="nav-item" href="../inicio.html">Inicio</a>
+                <a class="nav-item" href="Daños.html">Nosotros</a>
+                <a class="nav-item" href="Contaminacion.html">Productos</a> 
+                <a class="nav-item" href="Afecta.html">Cuidado de flores</a> 
+                <!-- <a class="nav-item" href="Evitar.html">Como ayudar</a> 
+                <a class="nav-item" href="#">Empresas</a>  -->
+        </nav>      
+    </div>
+    <!-- <div class="contenido2">
+        <div class="portadas">
+        </div> 
+    </div> -->
+
+
+    <section class="seccion2">
+        <h2 id="portafolio">Productos</h2>
+        <div class="seccion2-portafolios">
+        </div>
+    </section>
+
+
+
+    <div class="footer-content">
+        <div class="social-icons">
+          <a href="https://instagram.com/amourfleuriste.gt?igshid=MzRlODBiNWFlZA=="><img src="../media/instagram.png" alt="Instagram"></a>
+          <a href="https://instagram.com/amourfleuriste.gt?igshid=MzRlODBiNWFlZA=="><img src="../media/whatsapp.png" alt="WhatsApp"></a>
+          <a href="https://instagram.com/amourfleuriste.gt?igshid=MzRlODBiNWFlZA=="><img src="../media/facebook.png" alt="Facebook"></a>
+        </div>
+      </div>
+    <footer> 
+      <p>Calzada Roosevelt 35-53 zona 11, Ciudad de Guatemala</p>
+    </footer>
+    <script src="products.js"></script>
+    <script>
+        let navIconContainer = document.querySelector(".iconContainer")
+        let aContainer = document.querySelector(".aContainer")
+        let navItem = document.querySelector("nav-item")
+
+        navIconContainer.addEventListener("click",()=>{
+        aContainer.classList.toggle("show")
+        })
+    </script>
+</body>
+</html>
